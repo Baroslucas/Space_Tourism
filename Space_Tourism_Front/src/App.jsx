@@ -1,12 +1,15 @@
-import { useState } from 'react'
+
 import './App.css'
-import { Header } from './components/Header/Header'
+import {Header} from './components/GlobalComponents/Header/Header'
+import {DestinationComponent} from './components/DestinationComponents/DestinationComponent'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <Header />
+    <div>
+      <Header />
+      <DestinationComponent />
+    </div>
   )
 }
 
