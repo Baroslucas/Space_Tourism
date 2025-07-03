@@ -1,7 +1,8 @@
-// DestinationComponent.jsx
 import { useEffect, useState } from 'react';
 import PlanetImg from './PlanetImg/PlanetImg';
 import PlanetSwitchBtn from './PlanetSwitchBtn/PlanetSwitchBtn';
+import { PlanetDescription } from './PlanetDescription/PlanetDescription';
+import { PlanetDistanceInfo } from './PlanetDistanceInfo/PlanetDistanceInfo';
 
 export function DestinationComponent() {
   const [destinations, setDestinations] = useState([]);
@@ -33,7 +34,8 @@ export function DestinationComponent() {
       {selectedDestination && (
         <>
           <PlanetImg imageUrl={imageUrl} />
-          {/* autres sous-composants avec selectedDestination */}
+          <PlanetDescription title={selectedDestination.name} description={selectedDestination.description} />
+          <PlanetDistanceInfo distance={selectedDestination.distance} travel_time={selectedDestination.travel_time} />
         </>
       )}
     </div>
