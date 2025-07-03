@@ -1,4 +1,4 @@
-export function Title(number, text) {
+export function Title({number, text}) {
     return (
         <div>
             <p>{number}</p>

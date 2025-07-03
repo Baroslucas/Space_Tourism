@@ -3,13 +3,15 @@ import PlanetImg from './PlanetImg/PlanetImg';
 import PlanetSwitchBtn from './PlanetSwitchBtn/PlanetSwitchBtn';
 import { PlanetDescription } from './PlanetDescription/PlanetDescription';
 import { PlanetDistanceInfo } from './PlanetDistanceInfo/PlanetDistanceInfo';
+import { Title } from '../GlobalComponents/Title/Title';
 
 export function DestinationComponent() {
+  const apiUrl = import.meta.env.VITE_API_URL;
   const [destinations, setDestinations] = useState([]);
   const [selectedId, setSelectedId] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/destinations')
+    fetch(`${apiUrl}/destinations`)
       .then(res => res.json())
       .then(data => {
         setDestinations(data);
@@ -26,10 +28,11 @@ export function DestinationComponent() {
 
   return (
     <div>
+      <Title number="01" text="PICK YOUR DESTINATION" />
         <PlanetSwitchBtn
-        destinations={destinations}
-        selectedId={selectedId}
-        onSelect={setSelectedId}
+          destinations={destinations}
+          selectedId={selectedId}
+          onSelect={setSelectedId}
       />
       {selectedDestination && (
         <>
