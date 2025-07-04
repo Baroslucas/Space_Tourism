@@ -1,4 +1,4 @@
-// PlanetSwitchBtn.jsx
+
 export default function PlanetSwitchBtn({ destinations, selectedId, onSelect }) {
   return (
     <div>

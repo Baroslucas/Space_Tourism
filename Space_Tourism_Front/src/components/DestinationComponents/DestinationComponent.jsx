@@ -29,14 +29,15 @@ export function DestinationComponent() {
   return (
     <div>
       <Title number="01" text="PICK YOUR DESTINATION" />
-        <PlanetSwitchBtn
-          destinations={destinations}
-          selectedId={selectedId}
-          onSelect={setSelectedId}
-      />
+        
       {selectedDestination && (
         <>
           <PlanetImg imageUrl={imageUrl} />
+          <PlanetSwitchBtn
+            destinations={destinations}
+            selectedId={selectedId}
+            onSelect={setSelectedId}
+          />
           <PlanetDescription title={selectedDestination.name} description={selectedDestination.description} />
           <PlanetDistanceInfo distance={selectedDestination.distance} travel_time={selectedDestination.travel_time} />
         </>

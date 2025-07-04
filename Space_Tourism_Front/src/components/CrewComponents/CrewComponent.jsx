@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { CrewImg } from "./CrewImg/CrewImg";
 import { CrewDescription } from "./CrewDescription/CrewDescription";
 import { Title } from "../GlobalComponents/Title/Title";
+import CrewSwitchBtn from "./CrewSwitchBtn/CrewSwitchBtn";
 
 export function CrewComponent() {
   const apiUrl = import.meta.env.VITE_API_URL;
@@ -31,6 +32,11 @@ export function CrewComponent() {
       {selectedCrew && (
         <>
           <CrewImg imageUrl={imageUrl} />
+          <CrewSwitchBtn
+            crewMembers={crewMembers}
+            selectedId={selectedId}
+            onSelect={setSelectedId}
+          />
           <CrewDescription role={selectedCrew.role} name={selectedCrew.name} bio={selectedCrew.bio} />
         </>
       )}
