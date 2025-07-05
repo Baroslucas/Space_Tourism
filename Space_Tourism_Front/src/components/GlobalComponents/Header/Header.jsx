@@ -30,22 +30,22 @@ export function Header() {
                     <ul>
                         <li>
                             <Link to="/" onClick={() => setMenuOpen(false)}>
-                                <span>01</span> HOME
+                                <span>00</span> HOME
                             </Link>
                         </li>
                         <li>
                             <Link to="/destination" onClick={() => setMenuOpen(false)}>
-                                <span>02</span> DESTINATION
+                                <span>01</span> DESTINATION
                             </Link>
                         </li>
                         <li>
                             <Link to="/crew" onClick={() => setMenuOpen(false)}>
-                                <span>03</span> CREW 
+                                <span>02</span> CREW 
                             </Link>
                         </li>
                         <li>
                             <Link to="/technology" onClick={() => setMenuOpen(false)}>
-                                <span>04</span> TECHNOLOGY
+                                <span>03</span> TECHNOLOGY
                             </Link>
                         </li>
                     </ul>

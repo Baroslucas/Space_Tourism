@@ -6,10 +6,36 @@
     z-index: 100;
 }
 
+.burgerBtn {
+    background-color: transparent;
+    border: none;
+    
+}
+
+.closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .burgerBtn img,
 .closeBtn img {
-    width: 30px;
-    height: 30px;
+    border: none;
+    background-color: none;
+    object-fit: contain;
+}
+
+.closeBtn {
+    width: 40px;
+    height: 40px;
 }
 
 .sideMenu {
@@ -18,7 +44,8 @@
   right: 0;
   width: 250px;
   height: 100%;
-  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(5px);
+  background-color: rgba(36, 36, 36, 0.397);
   box-shadow: -2px 0 5px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
   padding: 2rem 1rem;
@@ -34,23 +61,26 @@
 
 .sideMenu nav ul {
     list-style: none;
-    padding: 0;
+    padding: 40px 0 0 0;
     margin: 0;
 }
 
 .sideMenu nav ul li {
-    margin: 1.5rem 0;
+    margin: 1.8rem 0;
+    letter-spacing: 2.7px;
 }
 
 .sideMenu nav ul li a {
     text-decoration: none;
-    font-size: 18px;
-    color: #000;
+    font-size: 16px;
+    color: #ffffff;
 }
 
 .sideMenu nav ul li a span {
     font-weight: bold;
-    margin-right: 0.5rem;
+    margin-right: 0.8rem;
+    color: #ffffff;
+
 }
 
 .backdrop {

@@ -1,0 +1,38 @@
+.div {
+    width: 90%;
+    gap: 27px;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    color: #D0D6F9;
+    font-family: "barlow";
+    letter-spacing: .1475rem;
+    text-transform: uppercase;
+    margin: 0 7px;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 72%;
+  height: 1.5px;
+  background-color: rgba(255, 255, 255, 0.486);
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 72%;
+  height: 1.5px;
+  background-color: white;
+}

@@ -1,0 +1,39 @@
+.div {
+    text-align: center;
+    width: 90%;
+    margin-top: 42px;
+}
+
+.firstP,
+.secondP {
+    color: #D0D6F9;
+    font-family: "barlow";
+}
+
+.firstP {
+    letter-spacing: 2.7px;
+}
+
+.secondP {
+    line-height: 2;
+    font-size: 15px;
+}
+
+.h1 {
+    color: white;
+    font-size: 5rem;
+    margin: 34px;
+    font-weight: 400;
+
+}
+
+.btn {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    border: #ffffff;
+    margin-top: 50px;
+    font-size: 1.25rem;
+    letter-spacing: 1.25px;
+    
+}

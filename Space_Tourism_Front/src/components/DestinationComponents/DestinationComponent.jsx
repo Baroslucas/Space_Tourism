@@ -4,6 +4,7 @@ import PlanetSwitchBtn from './PlanetSwitchBtn/PlanetSwitchBtn';
 import { PlanetDescription } from './PlanetDescription/PlanetDescription';
 import { PlanetDistanceInfo } from './PlanetDistanceInfo/PlanetDistanceInfo';
 import { Title } from '../GlobalComponents/Title/Title';
+import s from './DestinationComponent.module.css'
 
 export function DestinationComponent() {
   const apiUrl = import.meta.env.VITE_API_URL;
@@ -27,7 +28,7 @@ export function DestinationComponent() {
   const imageUrl = selectedDestination ? `http://localhost:8000/${selectedDestination.image_url}` : '';
 
   return (
-    <div>
+    <div className={s.div}>
       <Title number="01" text="PICK YOUR DESTINATION" />
         
       {selectedDestination && (

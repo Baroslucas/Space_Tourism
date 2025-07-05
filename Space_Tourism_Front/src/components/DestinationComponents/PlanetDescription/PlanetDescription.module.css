@@ -1,0 +1,20 @@
+.div {
+    width: 82%;
+}
+
+.h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1px;
+}
+
+.p {
+    color: #d0d6f9a1;
+    font-family: "barlowClasic";
+    font-weight: 100;
+    font-size: .9375rem;
+    line-height: 25px;
+    margin-top: 2px;
+}

@@ -1,16 +1,13 @@
+import s from './PlanetSwitchBtn.module.css'
 
 export default function PlanetSwitchBtn({ destinations, selectedId, onSelect }) {
   return (
-    <div>
+    <div className={s.div}>
       {destinations.map(dest => (
         <button
+          className={`${s.btn} ${dest.id === selectedId ? s.active : ""}`}
           key={dest.id}
           onClick={() => onSelect(dest.id)}
-          style={{
-            fontWeight: dest.id === selectedId ? 'bold' : 'normal',
-            marginRight: 8,
-            cursor: 'pointer'
-          }}
           aria-pressed={dest.id === selectedId}
         >
           {dest.name}

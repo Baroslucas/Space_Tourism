@@ -1,13 +1,15 @@
+import s from './PlanetDistanceInfo.module.css'
+
 export function PlanetDistanceInfo({distance, travel_time}) {
     return (
-        <div>
-            <div>
-                <p>AVG. DISTANCE</p>
-                <p>{distance}</p>
+        <div className={s.div}>
+            <div className={s.divDistance}>
+                <p className={s.titleInfo}>AVG. DISTANCE</p>
+                <p className={s.titleNumber}>{distance}</p>
             </div>
             <div>
-                <p>EST. TRAVEL TIME</p>
-                <p>{travel_time}</p>
+                <p className={s.titleInfo}>EST. TRAVEL TIME</p>
+                <p className={s.titleNumber}>{travel_time}</p>
             </div>
         </div>
     )
