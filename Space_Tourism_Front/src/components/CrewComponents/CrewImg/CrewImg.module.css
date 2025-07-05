@@ -1,0 +1,24 @@
+.div {
+    width: 40%;
+    margin-top: 27px;
+    position: relative;
+}
+
+.div::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0; /* espace sous le contenu */
+  width: 220%; /* ou une largeur fixe si tu souhaites une ligne plus courte */
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.089);
+
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 0px;
+    display: block;
+}

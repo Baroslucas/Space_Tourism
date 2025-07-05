@@ -3,6 +3,7 @@ import TechnoImg from './TechnoImg/TechnoImg';
 import TechnoSwitchBtn from './TechnoSwitchBtn/TechnoSwitchBtn';
 import { TechnoDescription } from './TechnoDescription/TechnoDescription';
 import { Title } from '../GlobalComponents/Title/Title';
+import s from './TechnoComponent.module.css'
 
 export function TechnoComponent() {
   const apiUrl = import.meta.env.VITE_API_URL;
@@ -27,7 +28,7 @@ export function TechnoComponent() {
   const imageUrl = selectedTechnology ? `http://localhost:8000/${selectedTechnology.image_url}` : '';
 
   return (
-    <div>
+    <div className={s.div}>
       <Title number="03" text="SPACE LAUNCH 101" /> 
       {selectedTechnology && (
         <>

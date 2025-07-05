@@ -1,7 +1,9 @@
+import s from './CrewImg.module.css'
+
 export function CrewImg({imageUrl}) {
     return (
-        <div>
-            <img src={imageUrl} style={{ maxWidth: '100%', height: 'auto' }} />
+        <div className={s.div}>
+            <img src={imageUrl} className={s.img} />
         </div>
     )
 }

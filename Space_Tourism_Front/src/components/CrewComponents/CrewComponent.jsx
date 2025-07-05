@@ -3,6 +3,7 @@ import { CrewImg } from "./CrewImg/CrewImg";
 import { CrewDescription } from "./CrewDescription/CrewDescription";
 import { Title } from "../GlobalComponents/Title/Title";
 import CrewSwitchBtn from "./CrewSwitchBtn/CrewSwitchBtn";
+import s from './CrewComponent.module.css'
 
 export function CrewComponent() {
   const apiUrl = import.meta.env.VITE_API_URL;
@@ -27,7 +28,7 @@ export function CrewComponent() {
   const imageUrl = selectedCrew ? `http://localhost:8000/${selectedCrew.image_url}` : '';
 
   return (
-    <div>
+    <div className={s.div}>
         <Title number="02" text="MEET YOUR CREW" />
       {selectedCrew && (
         <>

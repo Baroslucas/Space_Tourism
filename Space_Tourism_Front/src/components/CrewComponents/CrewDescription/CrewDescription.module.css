@@ -1,0 +1,24 @@
+.div {
+    width: 86%;
+    margin-top: 16px;
+}
+
+.role {
+    color: #ffffff4b;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.name {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.bio {
+    color: #D0D6F9;
+    font-size: .9375rem;
+    font-family: "barlowClasic";
+    line-height: 25px;
+}

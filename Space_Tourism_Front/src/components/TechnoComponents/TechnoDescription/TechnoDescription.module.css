@@ -1,0 +1,27 @@
+.div {
+    width: 87%;
+}
+
+.title {
+    color: var(--lightBlue);
+    font-size: .875rem;
+    letter-spacing: 2.36px;
+    font-family: "barlow";
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.name {
+    color: var(--white);
+    font-weight: 400;
+    font-style: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+.description {
+    color: var(--lightBlue);
+    font-size: .9375rem;
+    font-family: "barlowClasic";
+    line-height: 25px;
+}
