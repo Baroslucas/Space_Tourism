@@ -18,3 +18,17 @@
     line-height: 25px;
     margin-top: 2px;
 }
+
+@media (min-width: 768px) {
+    .div {
+        width: 73%;
+    }
+    .h1 {
+        font-size: 5rem;
+    }
+
+    .p {
+        font-size: 1rem;
+        line-height: 28px;
+    }
+}

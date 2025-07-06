@@ -12,3 +12,9 @@
   
 }
 
+@media (min-width: 768px) {
+  .div {
+    margin-top: 58px;
+  }
+}
+

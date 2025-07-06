@@ -3,3 +3,11 @@
     margin-top: 38px;
     margin-bottom: 20px;
 }
+
+@media (min-width: 768px) {
+    .div {
+        width: 35%;
+        margin-top: 3.75rem;
+        margin-bottom: 3.3125rem;
+    }
+}

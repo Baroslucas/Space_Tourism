@@ -25,3 +25,27 @@
     font-family: "barlowClasic";
     line-height: 25px;
 }
+
+@media (min-width: 768px) {
+    .div {
+        width: 58%;
+        margin-top: 44px;
+    }
+
+    .title {
+        font-size: 1rem;
+        letter-spacing: 2.7px;
+        margin: 0;
+    }
+
+    .name {
+        font-size: 2.5rem;
+        margin: 16px 0;
+    }
+
+    .description {
+        font-size: 1rem;
+        line-height: 28px;
+        margin: 0;
+    }
+}

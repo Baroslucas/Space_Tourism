@@ -36,3 +36,10 @@
   height: 1.5px;
   background-color: white;
 }
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 1rem;
+    letter-spacing: 2.7px;
+  }
+}

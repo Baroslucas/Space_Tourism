@@ -25,7 +25,7 @@ export function TechnoComponent() {
   if (technologies.length === 0) return <div>Loading...</div>;
 
   const selectedTechnology = technologies.find(t => t.id === selectedId);
-  const imageUrl = selectedTechnology ? `http://localhost:8000/${selectedTechnology.image_url}` : '';
+  const imageUrl = selectedTechnology ? `http://localhost:8000/${selectedTechnology.image_landscape_url}` : '';
 
   return (
     <div className={s.div}>

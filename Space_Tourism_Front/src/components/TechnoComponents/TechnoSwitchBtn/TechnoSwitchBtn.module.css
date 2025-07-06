@@ -24,3 +24,15 @@
     background-color: white;
 
 }
+
+@media (min-width: 768px) {
+    .div {
+        width: 28%;
+        margin-top: 58px;
+    }
+
+    .btn {
+        width: 60px;
+        height: 60px;
+    }
+}

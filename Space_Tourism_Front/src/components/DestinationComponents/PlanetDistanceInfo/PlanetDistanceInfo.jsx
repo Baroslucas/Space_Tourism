@@ -5,11 +5,11 @@ export function PlanetDistanceInfo({distance, travel_time}) {
         <div className={s.div}>
             <div className={s.divDistance}>
                 <p className={s.titleInfo}>AVG. DISTANCE</p>
-                <p className={s.titleNumber}>{distance}</p>
+                <p className={s.numberInfo}>{distance}</p>
             </div>
             <div>
                 <p className={s.titleInfo}>EST. TRAVEL TIME</p>
-                <p className={s.titleNumber}>{travel_time}</p>
+                <p className={s.numberInfo}>{travel_time}</p>
             </div>
         </div>
     )

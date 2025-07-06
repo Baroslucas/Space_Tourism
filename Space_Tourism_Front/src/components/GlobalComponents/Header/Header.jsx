@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import s from "./Header.module.css"
+import { NavLink } from "react-router-dom";
 
 export function Header() {
     const space_logo = "/assets/img/space_tourism_logo.png";
@@ -17,28 +18,41 @@ export function Header() {
 
             {/* Nav pour tablette et desktop */}
             <nav className={s.desktopNav}>
-                <ul>
-                    <li>
-                        <Link to="/">
-                            <span>00</span> HOME
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/destination">
-                            <span>01</span> DESTINATION
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/crew">
-                            <span>02</span> CREW
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/technology">
-                            <span>03</span> TECHNOLOGY
-                        </Link>
-                    </li>
-                </ul>
+                <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                    isActive ? `${s.navBtn} ${s.active}` : s.navBtn
+                    }
+                >
+                    HOME
+                </NavLink>
+
+                <NavLink
+                    to="/destination"
+                    className={({ isActive }) =>
+                    isActive ? `${s.navBtn} ${s.active}` : s.navBtn
+                    }
+                >
+                    DESTINATION
+                </NavLink>
+
+                <NavLink
+                    to="/crew"
+                    className={({ isActive }) =>
+                    isActive ? `${s.navBtn} ${s.active}` : s.navBtn
+                    }
+                >
+                    CREW
+                </NavLink>
+
+                <NavLink
+                    to="/technology"
+                    className={({ isActive }) =>
+                    isActive ? `${s.navBtn} ${s.active}` : s.navBtn
+                    }
+                >
+                    TECHNOLOGY
+                </NavLink>
             </nav>
 
             {/* burgerBtn pour mobile */}

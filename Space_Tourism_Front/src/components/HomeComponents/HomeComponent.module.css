@@ -7,16 +7,18 @@
 .firstP,
 .secondP {
     color: #D0D6F9;
-    font-family: "barlow";
+    
 }
 
 .firstP {
     letter-spacing: 2.7px;
+    font-family: "barlow";
 }
 
 .secondP {
     line-height: 2;
     font-size: 15px;
+    font-family: "barlowClasic";
 }
 
 .h1 {
@@ -36,4 +38,33 @@
     font-size: 1.25rem;
     letter-spacing: 1.25px;
     
+}
+
+@media (min-width: 768px) {
+
+    .div {
+        width: 58%;
+    }
+    .firstP {
+        font-size: 1.25rem;
+        letter-spacing: 3.38px;
+    }
+
+    .h1 {
+        font-size: 9.375rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .secondP {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .btn {
+        width: 263px;
+        height: 263px;
+        font-size: 2rem;
+        margin-top: 156px;
+    }
 }
