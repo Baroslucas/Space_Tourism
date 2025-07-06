@@ -4,3 +4,51 @@
     align-items: center;
     text-align: center;
 }
+
+.imgContainer {
+  order: 1;
+  display: flex;
+  align-items: center;
+  width: 40%;
+  margin-top: 27px;
+}
+
+.switchBtnContainer {
+  order: 2;
+}
+
+.descriptionContainer {
+  order: 3;
+  width: 86%;
+}
+
+/* TABLETTE */
+@media (min-width: 768px) {
+  .div {
+  height: 100vh;
+}
+
+  .imgContainer {
+    order: 3;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 78%;
+  min-height: 150px;
+  }
+
+  .switchBtnContainer {
+    order: 2;
+    display: flex;
+    align-items: center;
+  }
+
+  .descriptionContainer {
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+}

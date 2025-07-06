@@ -32,13 +32,23 @@ export function CrewComponent() {
         <Title number="02" text="MEET YOUR CREW" />
       {selectedCrew && (
         <>
-          <CrewImg imageUrl={imageUrl} />
-          <CrewSwitchBtn
-            crewMembers={crewMembers}
-            selectedId={selectedId}
-            onSelect={setSelectedId}
-          />
-          <CrewDescription role={selectedCrew.role} name={selectedCrew.name} bio={selectedCrew.bio} />
+          <div className={s.imgContainer}>
+            <CrewImg imageUrl={imageUrl} />
+          </div>
+          <div className={s.switchBtnContainer}>
+            <CrewSwitchBtn
+              crewMembers={crewMembers}
+              selectedId={selectedId}
+              onSelect={setSelectedId}
+            />
+          </div>
+          <div className={s.descriptionContainer}>
+            <CrewDescription 
+              role={selectedCrew.role} 
+              name={selectedCrew.name} 
+              bio={selectedCrew.bio} 
+            />
+          </div>
         </>
       )}
     </div>

@@ -1,6 +1,8 @@
 .div {
     display: flex;
-    gap: 16px
+    gap: 16px;
+    margin-top: 32px;
+    
 }
 
 .btn {
@@ -10,7 +12,7 @@
     background-color: rgba(255, 255, 255, 0.3);
     border: none;
     cursor: pointer;
-    margin-top: 32px;
+    
 }
 
 .btn:hover {

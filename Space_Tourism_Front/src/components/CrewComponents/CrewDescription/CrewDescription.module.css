@@ -1,5 +1,5 @@
 .div {
-    width: 86%;
+    width: 100%;
     margin-top: 16px;
 }
 
@@ -21,4 +21,27 @@
     font-size: .9375rem;
     font-family: "barlowClasic";
     line-height: 25px;
+}
+
+@media (min-width:768px) {
+    .div {
+        width: 70%;
+    }
+
+    .role {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .name {
+        font-size: 2.5rem;
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+
+    .bio {
+        font-size: 1rem;
+        line-height: 28px;
+        margin: 0;
+    }
 }
