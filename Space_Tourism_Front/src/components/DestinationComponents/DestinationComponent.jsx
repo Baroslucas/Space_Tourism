@@ -33,7 +33,11 @@ export function DestinationComponent() {
         
       {selectedDestination && (
         <>
+        <div className={s.gridContainer}>
+        <div className={s.imgContainer}>
           <PlanetImg imageUrl={imageUrl} />
+        </div>
+        <div className={s.textContainer}>
           <PlanetSwitchBtn
             destinations={destinations}
             selectedId={selectedId}
@@ -41,6 +45,8 @@ export function DestinationComponent() {
           />
           <PlanetDescription title={selectedDestination.name} description={selectedDestination.description} />
           <PlanetDistanceInfo distance={selectedDestination.distance} travel_time={selectedDestination.travel_time} />
+        </div>
+        </div>
         </>
       )}
     </div>

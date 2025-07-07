@@ -10,7 +10,7 @@
     font-family: "barlow";
     letter-spacing: .1475rem;
     text-transform: uppercase;
-    margin: 0 7px;
+    margin: 0 ;
     cursor: pointer;
     position: relative;
 }
@@ -41,5 +41,12 @@
   .btn {
     font-size: 1rem;
     letter-spacing: 2.7px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .div {
+    display: flex;
+
   }
 }

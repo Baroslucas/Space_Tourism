@@ -23,6 +23,7 @@
     font-family: "barlow";
     letter-spacing: .1475rem;
     margin-bottom: 0px;
+    font-size: .875rem;
 }
 
 .numberInfo {
@@ -51,4 +52,18 @@
     .numberInfo {
         font-style: 28px;
     }
+}
+
+@media (min-width: 1280px) {
+    .div {
+        text-align: left;
+        justify-content: flex-start;
+        
+    }
+
+    .divDistance {
+        margin-right: 40px;
+    }
+
+
 }

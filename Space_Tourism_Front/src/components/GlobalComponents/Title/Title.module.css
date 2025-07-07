@@ -30,3 +30,17 @@
         margin-bottom: 0;
     }
 }
+
+@media (min-width: 1280px) {
+    .div {
+        margin-top: 76px;
+        margin-left: 300px;
+    }
+
+    .number,
+    .text {
+        font-size: 1.75rem;
+        letter-spacing: 4.72px;
+        
+    }
+}

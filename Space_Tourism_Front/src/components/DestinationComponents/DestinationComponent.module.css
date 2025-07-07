@@ -4,3 +4,29 @@
     align-items: center;
     text-align: center;
 }
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 1280px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr;
+    }
+
+    .textContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}

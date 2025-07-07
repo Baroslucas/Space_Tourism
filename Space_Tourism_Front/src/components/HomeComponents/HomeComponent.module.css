@@ -68,3 +68,39 @@
         margin-top: 156px;
     }
 }
+
+@media (min-width: 1280px) {
+    .div {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        justify-items: center;
+        padding-top: 10%;
+        min-height: 100vh;
+    }
+
+    .divText {
+        width: 70%;
+        
+    }
+
+    .firstP {
+        margin: 0;
+        font-size: 1.75rem;
+        letter-spacing: 4.72px;
+    }
+
+    .secondP {
+        width: 100%;
+        text-align: left;
+        margin: 0;
+        font-size: 1.125rem;
+        line-height: 32px;
+        padding-left: 5%;
+    }
+
+    .h1 {
+        margin: 24px 0;
+    }
+
+}

@@ -68,11 +68,13 @@
 .sideMenu nav ul li {
     margin: 1.8rem 0;
     letter-spacing: 2.7px;
+    font-family: "barlow";
+    font-size: 1rem;
 }
 
 .sideMenu nav ul li a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     color: #ffffff;
 }
 
@@ -160,4 +162,33 @@
     }
 
 
+}
+
+@media (min-width: 1280px) {
+
+    .desktopNav {
+        width: 50%;
+        justify-content: space-evenly;
+    }
+
+    .navBtn:nth-child(1)::before {
+        content: "00";
+        padding-right: 10px;
+
+    }
+
+    .navBtn:nth-child(2)::before {
+        content: "01";
+        padding-right: 10px;
+    }
+
+    .navBtn:nth-child(3)::before {
+        content: "02";
+        padding-right: 10px;
+    }
+
+    .navBtn:nth-child(4)::before {
+        content: "03";
+        padding-right: 10px;
+    }
 }
