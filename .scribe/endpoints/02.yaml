@@ -1,0 +1,50 @@
+name: Technology
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/technologies
+    metadata:
+      groupName: Technology
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: |-
+        Récupérer toutes les technologies
+
+        Cette route retourne la liste complète des technologies utilisées dans le programme spatial.
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: |-
+          [
+            {
+              "id": 1,
+              "name": "Launch vehicle",
+              "description": "A launch vehicle or carrier rocket...",
+              "image": "launch-vehicle.png"
+            }
+          ]
+        headers: []
+        description: ''
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
