@@ -186,8 +186,6 @@
         transform: translateY(-50%);
     }
 
-
-
     .navBtn:nth-child(1)::before {
         content: "00";
         padding-right: 10px;
