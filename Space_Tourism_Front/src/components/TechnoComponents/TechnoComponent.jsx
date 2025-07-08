@@ -4,12 +4,13 @@ import TechnoSwitchBtn from './TechnoSwitchBtn/TechnoSwitchBtn';
 import { TechnoDescription } from './TechnoDescription/TechnoDescription';
 import { Title } from '../GlobalComponents/Title/Title';
 import s from './TechnoComponent.module.css'
+import { useMediaQuery } from '../../utils/utils';
 
 export function TechnoComponent() {
   const apiUrl = import.meta.env.VITE_API_URL;
   const [technologies, setTechnologies] = useState([]);
   const [selectedId, setSelectedId] = useState(null);
-
+  const isDesktop = useMediaQuery("(min-width: 1280px")
   useEffect(() => {
     fetch(`${apiUrl}/technologies`)
       .then(res => res.json())
@@ -25,21 +26,38 @@ export function TechnoComponent() {
   if (technologies.length === 0) return <div>Loading...</div>;
 
   const selectedTechnology = technologies.find(t => t.id === selectedId);
-  const imageUrl = selectedTechnology ? `http://localhost:8000/${selectedTechnology.image_landscape_url}` : '';
+  const imageUrl = selectedTechnology
+  ? `http://localhost:8000/${
+      isDesktop
+        ? selectedTechnology.image_url
+        : selectedTechnology.image_landscape_url
+    }`
+  : '';
 
   return (
-    <div className={s.div}>
+    <div className={s.section}>
       <Title number="03" text="SPACE LAUNCH 101" /> 
       {selectedTechnology && (
-        <>
-          <TechnoImg imageUrl={imageUrl} />
-          <TechnoSwitchBtn
-            technologies={technologies}
-            selectedId={selectedId}
-            onSelect={setSelectedId}
-          />
-          <TechnoDescription name={selectedTechnology.name} description={selectedTechnology.description} />
-        </>
+        <div className={s.div}>
+          <div className={s.imgContainer}>
+            <TechnoImg 
+              imageUrl={imageUrl}  
+            />
+          </div>
+          <div className={s.btnContainer}>
+            <TechnoSwitchBtn
+              technologies={technologies}
+              selectedId={selectedId}
+              onSelect={setSelectedId}
+            />
+          </div>
+          <div className={s.descriptionContainer}>
+            <TechnoDescription 
+              name={selectedTechnology.name} 
+              description={selectedTechnology.description} 
+            />
+          </div>
+        </div>
       )}
     </div>
   );

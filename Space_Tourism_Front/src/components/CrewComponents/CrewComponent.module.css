@@ -1,4 +1,4 @@
-.div {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,18 +24,22 @@
 
 /* TABLETTE */
 @media (min-width: 768px) {
-  .div {
-  height: 100vh;
-}
+  .container {
+    height: 100vh;
+  }
+
+  .titleContainer {
+    width: 90%;
+  }
 
   .imgContainer {
     order: 3;
-  flex-grow: 1;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  width: 78%;
-  min-height: 150px;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 78%;
+    min-height: 150px;
   }
 
   .switchBtnContainer {
@@ -50,5 +54,45 @@
     display: flex;
     justify-content: center;
     margin-top: 60px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas:
+      "title img"
+      "description img"
+      "btn img";
+    height: 100vh;
+  }
+
+  .titleContainer {
+    grid-area: title;
+  }
+
+  .imgContainer {
+    grid-area: img;
+    margin: 0;
+    width: 100%;
+    
+  }
+
+  .descriptionContainer {
+    grid-area: description;
+    display: flex;
+  }
+
+  .switchBtnContainer {
+    grid-area: btn;
+    padding-bottom: 120px;
+  }
+
+  .titleContainer,
+  .switchBtnContainer,
+  .descriptionContainer {
+    padding-left: 165px;
   }
 }

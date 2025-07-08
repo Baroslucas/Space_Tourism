@@ -6,29 +6,40 @@ import { useMediaQuery } from "../utils/utils";
 
 export function HeaderLayout({}) {
     const location = useLocation();
-     const isDesktopFormat = useMediaQuery('(min-width: 1280px)');
+    const isTabletFormat = useMediaQuery('(min-width: 768px) and (max-width: 1279px)');
+    const isDesktopFormat = useMediaQuery('(min-width: 1280px)');
 
   const backgrounds = {
     '/': {
       mobil: 'assets/img/home_background.png',
+      tablet: 'assets/img/home_tablet_background.png',
       desktop: 'assets/img/home_desktop_background.png',
     },
     '/destination': {
       mobil: 'assets/img/destination_background.png',
+      tablet: 'assets/img/destination_tablet_background.png',
       desktop: 'assets/img/destination_desktop_background.png',
     },
     '/crew': {
       mobil: 'assets/img/crew_background.png',
+      tablet: 'assets/img/crew_tablet_background.png',
       desktop: 'assets/img/crew_desktop_background.png',
     },
     '/technology': {
       mobil: 'assets/img/techno_background.png',
+      tablet: 'assets/img/techno_tablet_background.png',
       desktop: 'assets/img/techno_desktop_background.png',
     }
   };
 
   const routeBg = backgrounds[location.pathname];
-  const currentBg = routeBg ? (isDesktopFormat ? routeBg.desktop : routeBg.mobil) : '';
+  const currentBg = routeBg
+    ? isDesktopFormat
+      ? routeBg.desktop
+      : isTabletFormat
+        ? routeBg.tablet
+        : routeBg.mobil
+    : '';
 
     const styleBg = {
         backgroundImage: `url(${currentBg})`,

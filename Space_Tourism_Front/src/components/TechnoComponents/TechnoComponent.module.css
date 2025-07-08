@@ -1,6 +1,70 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .div {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.imgContainer {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.descriptionContainer {
+    width: 87%;
+}
+
+.btnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    margin-top: 32px;
+}
+
+@media (min-width: 768px) {
+    .descriptionContainer {
+        width: 58%;
+        margin: 44px 0;
+    }
+
+    .btnContainer {
+        width: 28%;
+        margin-top: 58px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .div {
+        display: grid;
+        grid-template-columns: 20% auto 33%;
+        grid-template-rows: 1fr;
+        grid-template-areas: "btn description img";
+        margin-top: 20px;
+    }
+
+    .btnContainer {
+        grid-area: btn;
+        margin: 0;
+        width: 100%;
+        
+    }
+
+    .imgContainer {
+        grid-area: img;
+        margin: 0;
+    }
+
+    .descriptionContainer {
+        grid-area: description;
+        margin: 0;
+        width: 100%;
+        
+    }
 }

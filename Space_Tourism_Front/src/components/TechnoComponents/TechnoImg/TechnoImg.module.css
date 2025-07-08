@@ -18,3 +18,9 @@
   }
 }
 
+@media (min-width: 1280px) {
+  .div {
+    margin: 0;
+  }
+}
+

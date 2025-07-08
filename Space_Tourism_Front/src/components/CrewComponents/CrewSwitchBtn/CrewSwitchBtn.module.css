@@ -22,3 +22,10 @@
 .active {
     background-color: #fff;
 }
+
+@media (min-width: 1280px) {
+    .btn {
+        width: 15px;
+        height: 15px;
+    }
+}

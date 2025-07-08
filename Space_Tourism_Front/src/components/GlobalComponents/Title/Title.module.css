@@ -19,8 +19,8 @@
 
 @media (min-width: 768px) {
     .div {
-        width: 100%;
-        margin-left: 38.5px;
+        width: 90%;
+        
     }
 
     .number,
@@ -34,7 +34,8 @@
 @media (min-width: 1280px) {
     .div {
         margin-top: 76px;
-        margin-left: 300px;
+        width: 84%;
+        
     }
 
     .number,

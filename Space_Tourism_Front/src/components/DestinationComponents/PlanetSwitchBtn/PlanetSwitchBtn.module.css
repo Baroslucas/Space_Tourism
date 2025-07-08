@@ -26,6 +26,10 @@
   background-color: rgba(255, 255, 255, 0.486);
 }
 
+.active {
+  
+}
+
 .active::after {
   content: "";
   position: absolute;
@@ -34,7 +38,7 @@
   transform: translateX(-50%);
   width: 72%;
   height: 1.5px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 @media (min-width: 768px) {
